@@ -50,7 +50,7 @@
 
         to-BT {
             bindings = <&mo 2>;
-            key-positions = <41 42>;
+            key-positions = <40 41>;
             layers = <0 1>;
         };
     };
