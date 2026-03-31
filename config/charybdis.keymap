@@ -58,7 +58,7 @@
 
         super {
             bindings = <&kp LGUI>;
-            key-positions = <51 52>;
+            key-positions = <48 52>;
             timeout-ms = <100>;
             layers = <0 1>;
         };

@@ -120,6 +120,6 @@ combos:
 - p: [40, 41]
   k: BT
   l: [BASE, FN]
-- p: [51, 52]
+- p: [48, 52]
   k: LGUI
   l: [BASE, FN]
