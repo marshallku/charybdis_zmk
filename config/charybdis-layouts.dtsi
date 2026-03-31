@@ -3,29 +3,25 @@
 / {
     charybdis_physical_layout: charybdis_physical_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Charybdis 4x6";
+        display-name = "Charybdis 4x6 Test";
 
         kscan = <&kscan0>;
         transform = <&default_transform>;
 
         keys
-            // =====================================================
-            // Key Physical Attributes:
-            // <w   h    x    y    rot    rx    ry>
-            // =====================================================
-
-            // =====================================================
-            // LEFT HALF — MAIN CLUSTER (4 x 6)
-            // =====================================================
-
-            // Row 0 (top / number row)
+            // Row 0
             = <&key_physical_attrs 100 100    0   38    0   0   0>
             , <&key_physical_attrs 100 100  100   38    0   0   0>
             , <&key_physical_attrs 100 100  200   12    0   0   0>
             , <&key_physical_attrs 100 100  300    0    0   0   0>
             , <&key_physical_attrs 100 100  400   12    0   0   0>
             , <&key_physical_attrs 100 100  500   25    0   0   0>
-
+            , <&key_physical_attrs 100 100  900   25    0   0   0>
+            , <&key_physical_attrs 100 100 1000   12    0   0   0>
+            , <&key_physical_attrs 100 100 1100    0    0   0   0>
+            , <&key_physical_attrs 100 100 1200   12    0   0   0>
+            , <&key_physical_attrs 100 100 1300   38    0   0   0>
+            , <&key_physical_attrs 100 100 1400   38    0   0   0>
             // Row 1
             , <&key_physical_attrs 100 100    0  138    0   0   0>
             , <&key_physical_attrs 100 100  100  138    0   0   0>
@@ -33,78 +29,77 @@
             , <&key_physical_attrs 100 100  300  100    0   0   0>
             , <&key_physical_attrs 100 100  400  112    0   0   0>
             , <&key_physical_attrs 100 100  500  125    0   0   0>
-
-            // Row 2 (home)
-            , <&key_physical_attrs 100 100    0  238    0   0   0>
-            , <&key_physical_attrs 100 100  100  238    0   0   0>
-            , <&key_physical_attrs 100 100  200  212    0   0   0>
-            , <&key_physical_attrs 100 100  300  200    0   0   0>
-            , <&key_physical_attrs 100 100  400  212    0   0   0>
-            , <&key_physical_attrs 100 100  500  225    0   0   0>
-
-            // Row 3 (bottom)
-            , <&key_physical_attrs 100 100    0  338    0   0   0>
-            , <&key_physical_attrs 100 100  100  338    0   0   0>
-            , <&key_physical_attrs 100 100  200  312    0   0   0>
-            , <&key_physical_attrs 100 100  300  300    0   0   0>
-            , <&key_physical_attrs 100 100  400  312    0   0   0>
-            , <&key_physical_attrs 100 100  500  325    0   0   0>
-
-            // =====================================================
-            // RIGHT HALF — MAIN CLUSTER (4 x 6)
-            // =====================================================
-
-            // Row 0 (top / number row)
-            , <&key_physical_attrs 100 100  900   25    0   0   0>
-            , <&key_physical_attrs 100 100 1000   12    0   0   0>
-            , <&key_physical_attrs 100 100 1100    0    0   0   0>
-            , <&key_physical_attrs 100 100 1200   12    0   0   0>
-            , <&key_physical_attrs 100 100 1300   38    0   0   0>
-            , <&key_physical_attrs 100 100 1400   38    0   0   0>
-
-            // Row 1
             , <&key_physical_attrs 100 100  900  125    0   0   0>
             , <&key_physical_attrs 100 100 1000  112    0   0   0>
             , <&key_physical_attrs 100 100 1100  100    0   0   0>
             , <&key_physical_attrs 100 100 1200  112    0   0   0>
             , <&key_physical_attrs 100 100 1300  138    0   0   0>
             , <&key_physical_attrs 100 100 1400  138    0   0   0>
-
-            // Row 2 (home)
+            // Row 2
+            , <&key_physical_attrs 100 100    0  238    0   0   0>
+            , <&key_physical_attrs 100 100  100  238    0   0   0>
+            , <&key_physical_attrs 100 100  200  212    0   0   0>
+            , <&key_physical_attrs 100 100  300  200    0   0   0>
+            , <&key_physical_attrs 100 100  400  212    0   0   0>
+            , <&key_physical_attrs 100 100  500  225    0   0   0>
             , <&key_physical_attrs 100 100  900  225    0   0   0>
             , <&key_physical_attrs 100 100 1000  212    0   0   0>
             , <&key_physical_attrs 100 100 1100  200    0   0   0>
             , <&key_physical_attrs 100 100 1200  212    0   0   0>
             , <&key_physical_attrs 100 100 1300  238    0   0   0>
             , <&key_physical_attrs 100 100 1400  238    0   0   0>
-
-            // Row 3 (bottom)
+            // Row 3
+            , <&key_physical_attrs 100 100    0  338    0   0   0>
+            , <&key_physical_attrs 100 100  100  338    0   0   0>
+            , <&key_physical_attrs 100 100  200  312    0   0   0>
+            , <&key_physical_attrs 100 100  300  300    0   0   0>
+            , <&key_physical_attrs 100 100  400  312    0   0   0>
+            , <&key_physical_attrs 100 100  500  325    0   0   0>
             , <&key_physical_attrs 100 100  900  325    0   0   0>
             , <&key_physical_attrs 100 100 1000  312    0   0   0>
             , <&key_physical_attrs 100 100 1100  300    0   0   0>
             , <&key_physical_attrs 100 100 1200  312    0   0   0>
             , <&key_physical_attrs 100 100 1300  338    0   0   0>
             , <&key_physical_attrs 100 100 1400  338    0   0   0>
-
-            // =====================================================
-            // THUMB CLUSTER — 5 LEFT + 3 RIGHT
-            // =====================================================
-
-            // Left Thumb Cluster (top row: 3 keys)
-            , <&key_physical_attrs 100 100  355  418  1200  498  890>
-            , <&key_physical_attrs 100 100  455  418  1200  498  890>
-            , <&key_physical_attrs 100 100  555  418  1200  498  890>
-
-            // Right Thumb Cluster (top row: 2 keys)
-            , <&key_physical_attrs 100 100  940  418 (-1200) 1102  890>
-            , <&key_physical_attrs 100 100 1040  418 (-1200) 1102  890>
-
-            // Left Thumb Cluster (bottom row: 2 keys)
-            , <&key_physical_attrs 100 100  455  518  1200  498  890>
-            , <&key_physical_attrs 100 100  555  518  1200  498  890>
-
-            // Right Thumb Cluster (bottom row: 1 key)
-            , <&key_physical_attrs 100 100  940  518 (-1200) 1102  890>
+            // Row 4 (pin test: gpio0 13)
+            , <&key_physical_attrs 100 100    0  438    0   0   0>
+            , <&key_physical_attrs 100 100  100  438    0   0   0>
+            , <&key_physical_attrs 100 100  200  438    0   0   0>
+            , <&key_physical_attrs 100 100  300  438    0   0   0>
+            , <&key_physical_attrs 100 100  400  438    0   0   0>
+            , <&key_physical_attrs 100 100  500  438    0   0   0>
+            , <&key_physical_attrs 100 100  900  438    0   0   0>
+            , <&key_physical_attrs 100 100 1000  438    0   0   0>
+            , <&key_physical_attrs 100 100 1100  438    0   0   0>
+            , <&key_physical_attrs 100 100 1200  438    0   0   0>
+            , <&key_physical_attrs 100 100 1300  438    0   0   0>
+            , <&key_physical_attrs 100 100 1400  438    0   0   0>
+            // Row 5 (pin test: gpio1 11)
+            , <&key_physical_attrs 100 100    0  538    0   0   0>
+            , <&key_physical_attrs 100 100  100  538    0   0   0>
+            , <&key_physical_attrs 100 100  200  538    0   0   0>
+            , <&key_physical_attrs 100 100  300  538    0   0   0>
+            , <&key_physical_attrs 100 100  400  538    0   0   0>
+            , <&key_physical_attrs 100 100  500  538    0   0   0>
+            , <&key_physical_attrs 100 100  900  538    0   0   0>
+            , <&key_physical_attrs 100 100 1000  538    0   0   0>
+            , <&key_physical_attrs 100 100 1100  538    0   0   0>
+            , <&key_physical_attrs 100 100 1200  538    0   0   0>
+            , <&key_physical_attrs 100 100 1300  538    0   0   0>
+            , <&key_physical_attrs 100 100 1400  538    0   0   0>
+            // Row 6 (pin test: gpio1 13)
+            , <&key_physical_attrs 100 100    0  638    0   0   0>
+            , <&key_physical_attrs 100 100  100  638    0   0   0>
+            , <&key_physical_attrs 100 100  200  638    0   0   0>
+            , <&key_physical_attrs 100 100  300  638    0   0   0>
+            , <&key_physical_attrs 100 100  400  638    0   0   0>
+            , <&key_physical_attrs 100 100  500  638    0   0   0>
+            , <&key_physical_attrs 100 100  900  638    0   0   0>
+            , <&key_physical_attrs 100 100 1000  638    0   0   0>
+            , <&key_physical_attrs 100 100 1100  638    0   0   0>
+            , <&key_physical_attrs 100 100 1200  638    0   0   0>
+            , <&key_physical_attrs 100 100 1300  638    0   0   0>
+            , <&key_physical_attrs 100 100 1400  638    0   0   0>
             ;
     };
 };
