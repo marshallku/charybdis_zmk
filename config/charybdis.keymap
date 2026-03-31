@@ -55,6 +55,12 @@
             key-positions = <40 41>;
             layers = <0 1>;
         };
+
+        super {
+            bindings = <&kp LGUI>;
+            key-positions = <51 52>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
