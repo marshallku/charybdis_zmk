@@ -59,6 +59,7 @@
         super {
             bindings = <&kp LGUI>;
             key-positions = <51 52>;
+            timeout-ms = <100>;
             layers = <0 1>;
         };
     };
@@ -82,8 +83,8 @@
             label = "FN";
             bindings = <
 &kp F1     &kp F2  &kp F3  &kp F4    &kp F5     &kp F6       &kp F7    &kp F8    &kp F9     &kp F10  &kp F11    &kp F12
-&kp CAPS   &trans  &trans  &trans    &trans     &trans        &trans    &trans    &kp UP     &trans   &trans     &trans
-&kp LCTRL  &trans  &trans  &trans    &trans     &trans        &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans     &trans
+&kp CAPS   &trans  &trans  &trans    &trans     &trans        &trans    &trans    &trans     &trans   &trans     &trans
+&kp LCTRL  &trans  &trans  &trans    &trans     &trans        &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT &trans    &trans
 &kp LSHFT  &trans  &trans  &trans    &trans     &trans        &trans    &kp LBKT  &kp RBKT   &kp EQUAL &kp GRAVE &trans
                             &kp LALT  &kp SPACE  &trans        &trans    &trans
                                       &trans     &trans        &kp RET
