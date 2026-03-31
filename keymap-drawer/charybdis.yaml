@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   BASE: [ESCAPE, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BSPC, TAB, Q, W, E, R, T, Y, U, I, O, P, \, LCTRL, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, '-', LALT, SPACE, FN, RALT, SPACE, L CLK, R CLK, RET]
+    X, C, V, B, N, M, ',', ., /, '-', LALT, SPACE, LGUI, RALT, SPACE, L CLK, R CLK, RET]
   FN:
   - F1
   - F2
@@ -51,11 +51,11 @@ layers:
   - '='
   - '`'
   - {t: ▽, type: trans}
-  - LALT
+  - {t: LALT, type: held}
   - SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - RET
@@ -121,5 +121,5 @@ combos:
   k: BT
   l: [BASE, FN]
 - p: [48, 52]
-  k: LGUI
-  l: [BASE, FN]
+  k: FN
+  l: [BASE]
