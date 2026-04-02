@@ -48,9 +48,9 @@ layers:
   - ','
   - .
   - /
-  - '-'
+  - RET
   - LALT
-  - {t: SPACE, h: SCROLL}
+  - {t: SPACE, h: FN}
   - LGUI
   - RALT
   - SPACE
@@ -80,7 +80,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PSCRN
   - DEL
   - LCTRL
   - {t: ▽, type: trans}
@@ -92,8 +92,8 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - HOME
+  - END
   - LSHFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -105,12 +105,12 @@ layers:
   - ']'
   - '='
   - '`'
+  - '-'
+  - LALT
+  - {t: SPACE, type: held}
   - {t: ▽, type: trans}
-  - {t: LALT, type: held}
-  - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - RET
@@ -221,7 +221,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -232,6 +232,3 @@ combos:
 - p: [40, 41]
   k: BT
   l: [BASE, FN]
-- p: [48, 52]
-  k: FN
-  l: [BASE]
