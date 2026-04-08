@@ -84,8 +84,8 @@ layers:
   - DEL
   - LCTRL
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BACK
+  - FWD
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT
