@@ -8,9 +8,10 @@
 
 // Layer definitions
 // 0: BASE    - QWERTY (from HHKB)
-// 1: FN      - F-keys, arrows, nav, symbols + trackball scroll (activated by holding left space)
+// 1: FN      - arrows, nav, symbols + trackball scroll (activated by holding left space)
 // 2: BT      - bluetooth management
 // 3: SCROLL  - trackball scroll
+// 4: FKEYS   - F1-F12 (activated by holding right space)
 
 / {
     behaviors {
@@ -79,7 +80,7 @@
 &kp TAB     &kp Q   &kp W   &kp E     &kp R            &kp T        &kp Y     &kp U      &kp I      &kp O     &kp P     &kp BSLH
 &kp LCTRL   &kp A   &kp S   &kp D     &kp F            &kp G        &kp H     &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z   &kp X   &kp C     &kp V            &kp B        &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RET
-                             &kp LALT  &lspc 1 SPACE    &kp LGUI     &kp RALT  &kp SPACE
+                             &kp LALT  &lspc 1 SPACE    &kp LGUI     &kp RALT  &lspc 4 SPACE
                                        &mkp LCLK        &mkp RCLK    &kp RET
             >;
         };
@@ -87,10 +88,10 @@
         fn_layer {
             label = "FN";
             bindings = <
-&kp F1     &kp F2  &kp F3  &kp F4    &kp F5     &kp F6       &kp F7    &kp F8    &kp F9     &kp F10  &kp F11    &kp F12
+&kp GRAVE  &trans      &trans        &trans        &trans  &trans     &kp MINUS &kp EQUAL &trans     &kp LBKT   &kp RBKT   &kp DEL
 &kp CAPS   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans     &trans    &trans    &kp INS    &kp MINUS  &kp PSCRN  &kp DEL
 &kp LCTRL  &trans      &mkp MB4      &mkp MB5      &trans  &trans     &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp HOME   &kp END
-&kp LSHFT  &trans      &trans        &trans        &trans  &trans     &trans    &kp LBKT  &kp RBKT   &kp EQUAL  &kp GRAVE  &trans
+&kp LSHFT  &trans      &trans        &trans        &trans  &trans     &trans    &trans    &trans     &trans     &trans     &trans
                             &kp LALT  &kp SPACE  &trans        &trans    &trans
                                       &trans     &trans        &kp RET
             >;
@@ -115,6 +116,18 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+                                &trans  &trans    &trans
+            >;
+        };
+
+        fkeys_layer {
+            label = "FKEYS";
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
                         &trans  &trans  &trans    &trans  &trans
                                 &trans  &trans    &trans
             >;
