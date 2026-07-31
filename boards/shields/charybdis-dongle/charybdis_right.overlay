@@ -33,6 +33,7 @@
     , <&gpio1 15 GPIO_ACTIVE_HIGH>
     , <&gpio0 24 GPIO_ACTIVE_HIGH>
 	  , <&gpio0 22 GPIO_ACTIVE_HIGH>
+    , <&gpio1 6  GPIO_ACTIVE_HIGH>
     ;
 };
 
@@ -54,4 +55,4 @@
 		device = <&trackball>;
 		relay-channel = <111>;
 	};
-};
+};

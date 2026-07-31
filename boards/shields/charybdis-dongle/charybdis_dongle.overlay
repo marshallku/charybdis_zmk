@@ -1,6 +1,11 @@
+#include "charybdis.dtsi"
+#include "charybdis-layouts.dtsi"
+
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        zmk,matrix-transform = &default_transform;
+        zmk,physical-layout = &charybdis_physical_layout;
     };
 
     mock_kscan: kscan_1 {
