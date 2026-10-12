@@ -1,0 +1,14 @@
+config CHARYBDIS_ADV_WATCHDOG
+	bool "Restart split peripheral advertising when ZMK fails to"
+	default y
+	depends on ZMK_SPLIT_BLE && !ZMK_SPLIT_ROLE_CENTRAL
+	help
+	  ZMK v0.3 restarts advertising from the disconnected() callback, before
+	  Zephyr has released the connection object. With one connection slot the
+	  start can fail with -ENOMEM, and ZMK only logs it — the half then stays
+	  dark until it is reset. This keeps retrying while disconnected.
+
+config CHARYBDIS_ADV_WATCHDOG_INTERVAL_MS
+	int "Retry interval while disconnected"
+	default 3000
+	depends on CHARYBDIS_ADV_WATCHDOG

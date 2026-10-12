@@ -1,0 +1,5 @@
+if(CONFIG_CHARYBDIS_ADV_WATCHDOG)
+  zephyr_library()
+  zephyr_include_directories(${APPLICATION_SOURCE_DIR}/include)
+  zephyr_library_sources(src/adv_watchdog.c)
+endif()
